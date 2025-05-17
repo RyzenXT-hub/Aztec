@@ -8,8 +8,8 @@ NC=$'\033[0m'
 
 read -rp "${GREEN}Enter your L1 RPC URL for Sepolia:${NC} " L1_RPC_URL
 read -rp "${GREEN}Enter your L1 Beacon (consensus) RPC URL:${NC} " L1_BEACON_URL
-read -rp "${GREEN}Enter your Validator Private Key:${NC} " VALIDATOR_PRIVKEY
-read -rp "${GREEN}Enter your Coinbase Address:${NC} " COINBASE_ADDRESS
+read -rp "${GREEN}Enter your Private Key:${NC} " VALIDATOR_PRIVKEY
+read -rp "${GREEN}Enter your Address:${NC} " COINBASE_ADDRESS
 
 echo "${BLUE}🔧 Installing Aztec CLI...${NC}"
 bash -i <(curl -s https://install.aztec.network)
